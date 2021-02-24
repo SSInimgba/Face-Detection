@@ -1,3 +1,4 @@
+Read [Notebook](https://github.com/SSInimgba/Face-Detection/blob/main/Face_Detection_and_Count.ipynb) for more explanation
 
 # How many faces?
 

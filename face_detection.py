@@ -11,7 +11,7 @@ from matplotlib.patches import Rectangle
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 CHANNEL = 3
-image_1_path = '/content/drive/MyDrive/NB/input/input00.txt'
+image_1_path = '/content/drive/MyDrive/NB/input/input00.txt' #insert your image path
 
 
 def txt_to_image(image_path):
@@ -52,3 +52,10 @@ def mtcnn_facedetector(image):
   mtcnn_faces = detector.detect_faces(image)
   faces = len(mtcnn_faces)
   return faces
+
+
+
+#  USAGE
+image = txt_to_image(image_path)
+print(haarcascades_facedetector(image))
+print(mtcnn_facedetector(image))

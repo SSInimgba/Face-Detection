@@ -13,27 +13,6 @@ You are provided with images of people at meetings, gatherings, group photos, et
 
 
 
-```
-!pip install deepface -q
-```
-
-
-```
-!pip install mtcnn
-```
-
-
-
-```
-import numpy as np
-from pathlib import Path
-import cv2
-from deepface.commons import functions
-from mtcnn.mtcnn import MTCNN
-from matplotlib import pyplot as plt
-from matplotlib.patches import Rectangle
-```
-
 # METHOD 1: Face Detection with OpenCV
 
 ### Face Detection using Haar Cascades from  OpenCV. 

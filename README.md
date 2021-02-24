@@ -57,27 +57,6 @@ for image in dataset:
   plt.show()
 ```
 
-    Faces Found: 2
-
-
-
-![png](README_files/README_9_1.png)
-
-
-    Faces Found: 1
-
-
-
-![png](README_files/README_9_3.png)
-
-
-    Faces Found: 2
-
-
-
-![png](README_files/README_9_5.png)
-
-
 The haar cascade does not generalize well for all the images and only accurately detects all the images in the first image. From experimentation, we observed that each image deserves a different argument in the detectMultiScale function in order to detect the faces present in the image accurately.
 
 If you notice the faces not detceted are mostly faces that are not aligned to the front (facing side ways). We can improve this by decreasing the minNeighbours to 3, but this results to false positives
@@ -126,27 +105,6 @@ for image in dataset:
     plt.gca().add_patch(Rectangle((x,y), w, h, linewidth=1, edgecolor='r', facecolor='none'))
   plt.show()
 ```
-
-    Faces Found: 2
-
-
-
-![png](README_files/README_13_1.png)
-
-
-    Faces Found: 3
-
-
-
-![png](README_files/README_13_3.png)
-
-
-    Faces Found: 5
-
-
-
-![png](README_files/README_13_5.png)
-
 
 MTCNN is better and more generalizable than the Haar Cascades and needs little to no finetuning to accurately detect a face in an image regardless of facial alignment
 

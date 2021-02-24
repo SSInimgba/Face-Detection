@@ -34,52 +34,6 @@ from matplotlib import pyplot as plt
 from matplotlib.patches import Rectangle
 ```
 
-
-```
-# Get the path of the txt files
-image_1_path = '/content/drive/MyDrive/NB/input/input00.txt'
-image_2_path = '/content/drive/MyDrive/NB/input/input01.txt'
-image_3_path = '/content/drive/MyDrive/NB/input/input02.txt'
-
-image_path_list = [image_1_path, image_2_path, image_3_path]
-```
-
-
-```
-images = []
-dataset = []
-CHANNEL = 3
-
-for i, image_path in enumerate(image_path_list):
-  with open(image_path, "r") as file: # read the data from the text file
-    lines = file.readlines()
-    image_list = [[line.replace(" ", ",").split(",")] for line in lines[1:]]
-    images.append(image_list) # create a list of list of the images
-  first_line = lines[0]
-  first_line = first_line.split()
-  R = int(first_line[0]) # rows
-  C = int(first_line[1]) # columns
-  image = np.array(images[i])
-  image = image.reshape(R, C, CHANNEL).astype(np.uint8) 
-  image = image[:,:,::-1] # transform to RGB
-  dataset.append(image) # create a list of the transformed images
-  plt.imshow(image, interpolation='nearest')
-  plt.title(f'Image {i+1}')
-  plt.show()
-```
-
-
-![png](README_files/README_5_0.png)
-
-
-
-![png](README_files/README_5_1.png)
-
-
-
-![png](README_files/README_5_2.png)
-
-
 # METHOD 1: Face Detection with OpenCV
 
 ### Face Detection using Haar Cascades from  OpenCV. 

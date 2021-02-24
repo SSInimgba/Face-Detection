@@ -22,15 +22,6 @@ You are provided with images of people at meetings, gatherings, group photos, et
 !pip install mtcnn
 ```
 
-    Requirement already satisfied: mtcnn in /usr/local/lib/python3.6/dist-packages (0.1.0)
-    Requirement already satisfied: keras>=2.0.0 in /usr/local/lib/python3.6/dist-packages (from mtcnn) (2.4.3)
-    Requirement already satisfied: opencv-python>=4.1.0 in /usr/local/lib/python3.6/dist-packages (from mtcnn) (4.1.2.30)
-    Requirement already satisfied: numpy>=1.9.1 in /usr/local/lib/python3.6/dist-packages (from keras>=2.0.0->mtcnn) (1.19.5)
-    Requirement already satisfied: h5py in /usr/local/lib/python3.6/dist-packages (from keras>=2.0.0->mtcnn) (2.10.0)
-    Requirement already satisfied: scipy>=0.14 in /usr/local/lib/python3.6/dist-packages (from keras>=2.0.0->mtcnn) (1.4.1)
-    Requirement already satisfied: pyyaml in /usr/local/lib/python3.6/dist-packages (from keras>=2.0.0->mtcnn) (3.13)
-    Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from h5py->keras>=2.0.0->mtcnn) (1.15.0)
-
 
 
 ```

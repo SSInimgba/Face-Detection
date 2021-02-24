@@ -29,7 +29,7 @@ def txt_to_image(image_path):
   return image
 
 
-
+# method 1 using openCV via haarcascades
 def haarcascades_facedetector(image):
   """takes in an image and applies haarcascades face detector 
   and returns number of faces detected"""
@@ -43,7 +43,7 @@ def haarcascades_facedetector(image):
   return faces
 
 
-
+# method 2 using Deep Learning via MTCNN
 def mtcnn_facedetector(image):
   """takes in an image and applies mtcnn face detector 
   and returns number of faces detected"""

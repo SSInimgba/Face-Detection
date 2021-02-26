@@ -57,5 +57,5 @@ def mtcnn_facedetector(image):
 
 #  USAGE
 image = txt_to_image(image_path)
-print(haarcascades_facedetector(image))
-print(mtcnn_facedetector(image))
+print(haarcascades_facedetector(image)) # method 1
+print(mtcnn_facedetector(image)) # method 2 (chosen method)
